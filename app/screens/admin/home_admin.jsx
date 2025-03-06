@@ -12,7 +12,7 @@ const HomeScreen = ({ navigation }) => {
             <NavBar router={router} />
 
             <Text style={styles.title}>Welcome to Kids Church</Text>
-            <Button title="Lessons" onPress={() => navigation.navigate('Nav1')} />
+            <Button title="Lessons" onPress={() => router.push('screens/tabs/tab_screens/lessons_screen')} />
             <Button title="Games" onPress={() => navigation.navigate('Nav2')} />
             <Button title="Crafts" onPress={() => navigation.navigate('Nav3')} />
             <Button title="Songs" onPress={() => navigation.navigate('Nav4')} />

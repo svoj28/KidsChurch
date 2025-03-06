@@ -5,7 +5,8 @@ export const appwriteConfig = {
     projectId: '67c4e79700286fba0b39',
     platform: 'com.kids.church',
     databaseId: '67c4ea69000f647f0355',
-    bucketId: '67c4eac2000b42162e65'
+    bucketId: '67c4eac2000b42162e65',
+    lessonsId: '67c90361002ac0b4fab9'
 }
 
 

@@ -33,12 +33,12 @@ const RootLayout = () => {
 
   useEffect(() => {
     if (!isLoading && isAuthenticated) {
-      router.replace("screens/admin/home_admin"); // Redirect to homepage if user is logged in
+      router.replace("screens/admin/home_admin"); 
     }
   }, [isLoading, isAuthenticated, router]);
 
   if (isLoading) {
-    return null; // Render nothing or a loading indicator while checking authentication
+    return null; 
   }
 
   return (
@@ -48,6 +48,7 @@ const RootLayout = () => {
         <Stack.Screen name="screens/auth/signup_page" options={{ headerShown: false }} />
         <Stack.Screen name="screens/admin/home_admin" options={{ headerShown: false }} />
         <Stack.Screen name="screens/admin/settings_admin" options={{ headerShown: false }} />
+        <Stack.Screen name="screens/tabs/tab_screens/lessons_screen" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
